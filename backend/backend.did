@@ -1,0 +1,9 @@
+type Result = 
+ variant {
+   err: text;
+   ok: int;
+ };
+service : {
+  calculate: (int, int, text) -> (Result);
+  clear: () -> ();
+}
